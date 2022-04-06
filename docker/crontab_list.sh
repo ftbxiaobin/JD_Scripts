@@ -5,8 +5,6 @@
 
 ##############短期活动##############
 
-#3.18-3.31小天才联合活动抽奖机
-50 7 * * * node /scripts/jd_xtc.js >> /scripts/logs/jd_xtc.log 2>&1
 
 ##############长期活动##############
 
@@ -174,12 +172,8 @@
 46 1,19 * * * node /scripts/jd_fanli.js >> /scripts/logs/jd_fanli.log 2>&1
 #农场集勋章
 16 7,16 * * * node /scripts/jd_medal.js >> /scripts/logs/jd_medal.log 2>&1
-#美丽研究院--兑换
-1 7,12,19 * * * node /scripts/jd_beauty_ex.js >> /scripts/logs/jd_beauty_ex.log 2>&1
 #京东保价
 41 23 * * * node /scripts/jd_price.js >> /scripts/logs/jd_price.log 2>&1
-#见缝插针
-15 3,20 * * * node /scripts/jd_jfcz.js >> /scripts/logs/jd_jfcz.log 2>&1
 #玩一玩成就
 0 8,22 * * * node /scripts/jd_wyw.js >> /scripts/logs/jd_wyw.log 2>&1
 # 京喜签到-喜豆
@@ -206,8 +200,6 @@
 0 * * * * node /scripts/jx_exchange_fortune.js >> /scripts/logs/jx_exchange_fortune.log 2>&1
 #微信签到领红包
 3 0,11 * * * node /scripts/jd_wq_wxsign.js >> /scripts/logs/jd_wq_wxsign.log 2>&1
-#颜究种植园
-30 6-20/3 * * *  node /scripts/jd_xinruimz.js >> /scripts/logs/jd_xinruimz.log 2>&1
 #东东健康社区兑换5豆
 2 0 * * * node /scripts/jd_health_exchange_5.js >> /scripts/logs/jd_health_exchange_5.log 2>&1
 #东东健康社区兑换10豆
@@ -218,16 +210,12 @@
 30 3,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 #东东电竞经理
 20 0-23/2 * * * node /scripts/jd_EsportsManager.js >> /scripts/logs/jd_EsportsManager.log 2>&1
-#京豆夺宝
-40,45 23 * * * node /scripts/jd_duobao.js >> /scripts/logs/jd_duobao.log 2>&1
 #京东金榜
 9 7 * * * node /scripts/jd_gold_sign.js >> /scripts/logs/jd_gold_sign.log 2>&1
 #京东特价翻翻乐
 20 0-23/3 * * * node /scripts/jd_jdtj_winner.js >> /scripts/logs/jd_jdtj_winner.log 2>&1
 #京喜工厂商品列表详情
 0 0,7,19 * * * node /scripts/jd_jxgckc.js >> /scripts/logs/jd_jxgckc.log 2>&1
-#京东生鲜每日抽奖
-10 7 * * * node /scripts/jd_sxLottery.js >> /scripts/logs/jd_sxLottery.log 2>&1
 #赚京豆-瓜分京豆
 10 0,9,12,15 * * * node /scripts/jd_zjd.js >> /scripts/logs/jd_zjd.log 2>&1
 #京喜工厂开团助力
