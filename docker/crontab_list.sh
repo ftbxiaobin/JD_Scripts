@@ -5,6 +5,8 @@
 
 ##############短期活动##############
 
+#大力智能品牌联合活动抽奖机
+10 6,20 * * * node /scripts/jd_dlzncjj.js >> /scripts/logs/jd_dlzncjj.log 2>&1
 
 ##############长期活动##############
 
@@ -228,3 +230,5 @@
 20 0,16 * * * node /scripts/jd_ttpt.js >> /scripts/logs/jd_ttpt.log 2>&1
 #小鸽有礼 - 每日抽奖
 13 1,22,23 * * * node /scripts/jd_daily_lottery.js >> /scripts/logs/jd_daily_lottery.log 2>&1
+#京东签到翻牌
+10 8 * * * node /scripts/jd_sign_graphics.js >> /scripts/logs/jd_sign_graphics.log 2>&1
