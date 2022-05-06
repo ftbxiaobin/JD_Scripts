@@ -85,7 +85,7 @@
 #东东健康社区好友互助
 5 4,14 * * * node /scripts/jd_health_help.js >> /scripts/logs/jd_health_help.log 2>&1
 #秒秒币
-10 2 * * * node /scripts/jd_ms.js >> /scripts/logs/jd_ms.log 2>&1
+10 */6 * * * node /scripts/jd_ms.js >> /scripts/logs/jd_ms.log 2>&1
 #东东乐园大风车
 9 0-23/3 * * * node /scripts/jd_ddnc_farmpark.js >> /scripts/logs/jd_ddnc_farmpark.log 2>&1
 #京喜工厂
