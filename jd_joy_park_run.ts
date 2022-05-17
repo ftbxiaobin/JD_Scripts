@@ -19,7 +19,7 @@ let captainId: string = '', h5stTool: H5ST = new H5ST('b6ac3', 'jdltapp;', '1804
         cookie = value
         UserName = decodeURIComponent(cookie.match(/pt_pin=([^;]*)/)![1])
         console.log(`\n开始【京东账号${index + 1}】${UserName}\n`)
-        let assets: number = parseFloat(process.env.JD_JOY_PARK_RUN_ASSETS || '0.08')
+        let assets: number = parseFloat(process.env.JD_JOY_PARK_RUN_ASSETS || '0.04')
         let rewardAmount: number = 0
         try {
             h5stTool = new H5ST('448de', 'jdltapp;', process.env.FP_448DE || '')
@@ -35,7 +35,7 @@ let captainId: string = '', h5stTool: H5ST = new H5ST('b6ac3', 'jdltapp;', '1804
             }
 
             for (let t of res?.data?.detailVos || []) {
-                if (getDate(new Date(t.createTime)) === new Date().getDate()) {
+                if (t.amount > 0 && getDate(new Date(t.createTime)) === new Date().getDate()) {
                     sum = add(sum, t.amount)
                     success++
                 } else {
@@ -95,7 +95,10 @@ let captainId: string = '', h5stTool: H5ST = new H5ST('b6ac3', 'jdltapp;', '1804
             }
             await startRunning(res, assets)
 
+            res = await runningPageHome()
             for (let i = 0; i < energy; i++) {
+                if (res.data.runningHomeInfo.nextRunningTime / 1000 < 3000)
+                    break
                 console.log('💉')
                 res = await api('runningUseEnergyBar', { "linkId": "L-sOanK_5RJCz7I314FpnQ" })
                 console.log(res.errMsg)
