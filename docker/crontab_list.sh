@@ -208,26 +208,4 @@
 #小鸽有礼 - 每日抽奖
 13 1,22,23 * * * node /scripts/jd_daily_lottery.js >> /scripts/logs/jd_daily_lottery.log 2>&1
 
-############## Sami ##############
-#京东App首页-领金豆-抽金豆
-10 5,17 * * * node /scripts/Sami_jd_SoyBean.js >> /scripts/logs/Sami_jd_SoyBean.log 2>&1
-#京东极速App首页-百元生活费-发财挖宝
-13 7,8 * * * node /scripts/Sami_jd_fcwb.js >> /scripts/logs/Sami_jd_fcwb.log 2>&1
-#东东健康社区兑换
-1 0 * * * node /scripts/Sami_jd_jdjkdh.js >> /scripts/logs/Sami_jd_jdjkdh.log 2>&1
-#领现金
-13 7,8  * * * node /scripts/Sami_jd_lxj.js >> /scripts/logs/Sami_jd_lxj.log 2>&1
-#锦鲤红包任务
-20 * * * * node /scripts/Sami_jd_lyhb.js >> /scripts/logs/Sami_jd_lyhb.log 2>&1
-#锦鲤红包互助
-2 * * * * node /scripts/Sami_jd_lyhb_help.js >> /scripts/logs/Sami_jd_lyhb_help.log 2>&1
-#京东秒杀
-15 7,12,16 * * * node /scripts/Sami_jd_ms.js >> /scripts/logs/Sami_jd_ms.log 2>&1
-#京东极速App首页-汪汪乐园
-15 6,10,14,19,21 * * * node /scripts/Sami_jd_wwly.js >> /scripts/logs/Sami_jd_wwly.log 2>&1
-#京东极速App首页-汪汪乐园
-25 6,10,14,19,21 * * * node /scripts/Sami_jd_wwly1.js >> /scripts/logs/Sami_jd_wwly1.log 2>&1
-#京东极速App首页-汪汪乐园
-25 6,10,14,19,21 * * * node /scripts/Sami_jd_wwly2.js >> /scripts/logs/Sami_jd_wwly1.log 2>&1
-#微信提现6.66元
-13 6,8,11,13,18,20,21 * * * node /scripts/Sami_jd_wx_hb_tx.js >> /scripts/logs/Sami_jd_wx_hb_tx.log 2>&1
+
