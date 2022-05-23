@@ -185,8 +185,6 @@
 14 2,10 * * * node /scripts/jd_sign_graphics.js >> /scripts/logs/jd_sign_graphics.log 2>&1
 #京豆兑换为喜豆
 33 9 * * * node /scripts/jd_exchangejxbeans.js >> /scripts/logs/jd_exchangejxbeans.log 2>&1
-#京喜财富岛红包兑换
-0 * * * * node /scripts/jx_exchange_fortune.js >> /scripts/logs/jx_exchange_fortune.log 2>&1
 #微信签到领红包
 3 0,11 * * * node /scripts/jd_wq_wxsign.js >> /scripts/logs/jd_wq_wxsign.log 2>&1
 #京东金榜
@@ -209,6 +207,8 @@
 5 6 * * * node /scripts/jd_jmf.js >> /scripts/logs/jd_jmf.log 2>&1
 #点点券
 5 6 * * * node /scripts/jd_ddq.js >> /scripts/logs/jd_ddq.log 2>&1
+#财富岛兑换红包
+50 * * * * node /scripts/jd_cfd_hb.js >> /scripts/logs/jd_cfd_hb.log 2>&1
 
 
 
