@@ -4,7 +4,8 @@
 30 * * * * sh +x /scripts/docker/auto_help.sh collect >> /scripts/logs/auto_help_collect.log 2>&1
 
 ##############短期活动##############
-
+#热爱奇旅
+33 0,6-23/2 * * * node /scripts/jd_19E.js >> /scripts/logs/jd_19E.log 2>&1
 
 ##############长期活动##############
 
