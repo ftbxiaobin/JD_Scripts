@@ -199,13 +199,16 @@
 10 0,9,12,15 * * * node /scripts/jd_zjd.js >> /scripts/logs/jd_zjd.log 2>&1
 #京喜工厂开团助力
 10 7 * * * node /scripts/jd_jxfactory.js >> /scripts/logs/jd_jxfactory.log 2>&1
-#京东试用待领取通知
-30 18 * * * node /scripts/jd_try_notify.js >> /scripts/logs/jd_try_notify.log 2>&1
 #京东-京喜双签
 23 11,20 * * * node /scripts/jd_jxsign.js >> /scripts/logs/jd_jxsign.log 2>&1
 #京东金融天天拼图
 20 0,16 * * * node /scripts/jd_ttpt.js >> /scripts/logs/jd_ttpt.log 2>&1
 #小鸽有礼 - 每日抽奖
 13 1,22,23 * * * node /scripts/jd_daily_lottery.js >> /scripts/logs/jd_daily_lottery.log 2>&1
+#京东集魔方
+5 6 * * * node /scripts/jd_jmf.js >> /scripts/logs/jd_jmf.log 2>&1
+#点点券
+5 6 * * * node /scripts/jd_ddq.js >> /scripts/logs/jd_ddq.log 2>&1
+
 
 
