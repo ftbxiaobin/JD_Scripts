@@ -13,7 +13,6 @@
 35 0-23/2 * * * node /scripts/jd_joy.js >> /scripts/logs/jd_joy.log 2>&1
 #宠汪汪兑换
 59 7,15,23 * * * node /scripts/jd_joy_reward.js >> /scripts/logs/jd_joy_reward.log 2>&1
-
 #京喜签到
 0 3,8 * * * node /scripts/jd_jxsign.js >> /scripts/logs/jd_jxsign.log 2>&1
 #东东超市兑换奖品
@@ -182,12 +181,6 @@
 0 0,3 * * * node /scripts/jd_babel_sign.js >> /scripts/logs/jd_babel_sign.log 2>&1
 # 京东超级盒子
 4 2,3,22 * * * node /scripts/jd_cjhz.js >> /scripts/logs/jd_superbox.log 2>&1
-# 头文子J
-10 8,18 * * * node /scripts/jd_mpdzcar.js >> /scripts/logs/jd_mpdzcar.log 2>&1
-# 头文字J 游戏
-10 6,10,12 * * * node /scripts/jd_mpdzcar_game.js >> /scripts/logs/jd_mpdzcar_game.log 2>&1
-# 头文字J 助力
-10 3,19 * * * node /scripts/jd_mpdzcar_help.js >> /scripts/logs/jd_mpdzcar_help.log 2>&1
 #京东签到图形验证
 14 2,10 * * * node /scripts/jd_sign_graphics.js >> /scripts/logs/jd_sign_graphics.log 2>&1
 #京豆兑换为喜豆
@@ -196,10 +189,6 @@
 0 * * * * node /scripts/jx_exchange_fortune.js >> /scripts/logs/jx_exchange_fortune.log 2>&1
 #微信签到领红包
 3 0,11 * * * node /scripts/jd_wq_wxsign.js >> /scripts/logs/jd_wq_wxsign.log 2>&1
-#京东小魔方
-30 3,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
-#东东电竞经理
-20 0-23/2 * * * node /scripts/jd_EsportsManager.js >> /scripts/logs/jd_EsportsManager.log 2>&1
 #京东金榜
 9 7 * * * node /scripts/jd_gold_sign.js >> /scripts/logs/jd_gold_sign.log 2>&1
 #京东特价翻翻乐
