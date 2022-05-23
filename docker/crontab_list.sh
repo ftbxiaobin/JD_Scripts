@@ -13,8 +13,7 @@
 35 0-23/2 * * * node /scripts/jd_joy.js >> /scripts/logs/jd_joy.log 2>&1
 #宠汪汪兑换
 59 7,15,23 * * * node /scripts/jd_joy_reward.js >> /scripts/logs/jd_joy_reward.log 2>&1
-#点点券
-10 6,20 * * * node /scripts/jd_necklace.js >> /scripts/logs/jd_necklace.log 2>&1
+
 #京喜签到
 0 3,8 * * * node /scripts/jd_jxsign.js >> /scripts/logs/jd_jxsign.log 2>&1
 #东东超市兑换奖品
@@ -85,8 +84,6 @@
 5-45/20 * * * * node /scripts/jd_health_collect.js >> /scripts/logs/jd_health_collect.log 2>&1
 #东东健康社区好友互助
 5 4,14 * * * node /scripts/jd_health_help.js >> /scripts/logs/jd_health_help.log 2>&1
-#秒秒币
-10 */6 * * * node /scripts/jd_ms.js >> /scripts/logs/jd_ms.log 2>&1
 #东东乐园大风车
 9 0-23/3 * * * node /scripts/jd_ddnc_farmpark.js >> /scripts/logs/jd_ddnc_farmpark.log 2>&1
 #京喜工厂
@@ -131,8 +128,6 @@
 40 0-21/3 * * * node /scripts/jd_joy_steal.js >> /scripts/logs/jd_joy_steal.log 2>&1
 #汪汪乐园每日任务
 0 0,7,9,17,20 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1
-#汪汪乐园养joy
-20 0-23/3 * * * node /scripts/jd_joy_park.js >> /scripts/logs/jd_joy_park.log 2>&1
 #领现金兑换
 0 0 * * * node /scripts/jd_cash_exchange.js >> /scripts/logs/jd_cash_exchange.log 2>&1
 #宠汪汪喂食
@@ -201,12 +196,6 @@
 0 * * * * node /scripts/jx_exchange_fortune.js >> /scripts/logs/jx_exchange_fortune.log 2>&1
 #微信签到领红包
 3 0,11 * * * node /scripts/jd_wq_wxsign.js >> /scripts/logs/jd_wq_wxsign.log 2>&1
-#东东健康社区兑换5豆
-2 0 * * * node /scripts/jd_health_exchange_5.js >> /scripts/logs/jd_health_exchange_5.log 2>&1
-#东东健康社区兑换10豆
-1 0 * * * node /scripts/jd_health_exchange_10.js >> /scripts/logs/jd_health_exchange_10.log 2>&1
-#东东健康社区兑换20豆
-0 0 * * * node /scripts/jd_health_exchange_20.js >> /scripts/logs/jd_health_exchange_20.log 2>&1
 #京东小魔方
 30 3,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 #东东电竞经理
@@ -229,3 +218,27 @@
 20 0,16 * * * node /scripts/jd_ttpt.js >> /scripts/logs/jd_ttpt.log 2>&1
 #小鸽有礼 - 每日抽奖
 13 1,22,23 * * * node /scripts/jd_daily_lottery.js >> /scripts/logs/jd_daily_lottery.log 2>&1
+
+############## Sami ##############
+#京东App首页-领金豆-抽金豆
+10 5,17 * * * node /scripts/Sami_jd_SoyBean.js >> /scripts/logs/Sami_jd_SoyBean.log 2>&1
+#京东极速App首页-百元生活费-发财挖宝
+13 7,8 * * * node /scripts/Sami_jd_fcwb.js >> /scripts/logs/Sami_jd_fcwb.log 2>&1
+#东东健康社区兑换
+1 0 * * * node /scripts/Sami_jd_jdjkdh.js >> /scripts/logs/Sami_jd_jdjkdh.log 2>&1
+#领现金
+13 7,8  * * * node /scripts/Sami_jd_lxj.js >> /scripts/logs/Sami_jd_lxj.log 2>&1
+#锦鲤红包任务
+20 * * * * node /scripts/Sami_jd_lyhb.js >> /scripts/logs/Sami_jd_lyhb.log 2>&1
+#锦鲤红包互助
+2 * * * * node /scripts/Sami_jd_lyhb_help.js >> /scripts/logs/Sami_jd_lyhb_help.log 2>&1
+#京东秒杀
+15 7,12,16 * * * node /scripts/Sami_jd_ms.js >> /scripts/logs/Sami_jd_ms.log 2>&1
+#京东极速App首页-汪汪乐园
+15 6,10,14,19,21 * * * node /scripts/Sami_jd_wwly.js >> /scripts/logs/Sami_jd_wwly.log 2>&1
+#京东极速App首页-汪汪乐园
+25 6,10,14,19,21 * * * node /scripts/Sami_jd_wwly1.js >> /scripts/logs/Sami_jd_wwly1.log 2>&1
+#京东极速App首页-汪汪乐园
+25 6,10,14,19,21 * * * node /scripts/Sami_jd_wwly2.js >> /scripts/logs/Sami_jd_wwly1.log 2>&1
+#微信提现6.66元
+13 6,8,11,13,18,20,21 * * * node /scripts/Sami_jd_wx_hb_tx.js >> /scripts/logs/Sami_jd_wx_hb_tx.log 2>&1
