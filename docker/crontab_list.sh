@@ -7,6 +7,9 @@
 #热爱奇旅
 33 0,6-23/2 * * * node /scripts/jd_19E.js >> /scripts/logs/jd_19E.log 2>&1
 
+#618个护抽奖机
+10 7 * * * node /scripts/jd_618cj.js >> /scripts/logs/jd_618cj.log 2>&1
+
 ##############长期活动##############
 
 #宠汪汪
