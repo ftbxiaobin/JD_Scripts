@@ -12,6 +12,10 @@
 11 20 * * * node /scripts/jd_19EPZ_help.js >> /scripts/logs/jd_19EPZ_help.log 2>&1
 #618个护抽奖机
 10 7 * * * node /scripts/jd_618cj.js >> /scripts/logs/jd_618cj.log 2>&1
+#健康医疗618抽奖机活动
+10 7 * * * node /scripts/jd_618jk.js >> /scripts/logs/jd_618jk.log 2>&1
+
+
 
 ##############长期活动##############
 
