@@ -10,6 +10,8 @@
 33 0,6-23/3 * * * node /scripts/jd_19E_help.js >> /scripts/logs/jd_19E_help.log 2>&1
 #热爱奇旅互助版
 11 20 * * * node /scripts/jd_19EPZ_help.js >> /scripts/logs/jd_19EPZ_help.log 2>&1
+#热爱奇旅互助版
+20 0,8 * * * node /scripts/jd_19E_friend.js >> /scripts/logs/jd_19E_friend.log 2>&1
 #618个护抽奖机
 10 7 * * * node /scripts/jd_618cj.js >> /scripts/logs/jd_618cj.log 2>&1
 #健康医疗618抽奖机活动
